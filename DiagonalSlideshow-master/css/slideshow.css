@@ -1,0 +1,23 @@
+.brand-logo {
+  font-weight: 300 !important;
+  font-size: 30px;
+}
+
+#logo2 {
+  font-weight: 900;
+}
+
+.slide__subtitle {
+    color: #f9c060;
+    font-weight: 700;
+    text-decoration: double;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+.gitIcon {
+  transform: rotate(180deg);
+}
+
+.content__title {
+  font-size: 60px !important;
+}
