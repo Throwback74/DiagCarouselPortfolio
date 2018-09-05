@@ -19,6 +19,11 @@
     text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
 
+.slide__number {
+  text-decoration: double;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
 .gitIcon {
   transform: rotate(180deg);
 }
@@ -33,25 +38,32 @@
   text-shadow: 0 0 10px rgb(94, 94, 245);
 }
 
-.nextArrow {
+.nextArrow, .prevArrow {
   color: black;
 }
 
-.prevArrow {
+.prevArrow, .prevArrowShadow {
   transform: rotate(310deg);
   font-size: 34px;
-  filter: url("#dropshadow");
+  text-shadow: 0 0 10px rgb(94, 94, 245);
 }
 
-/* #icon-navarrow{
-
+.nextArrow, .prevArrow {
+  opacity: 0.85;                /* Opacity (Transparency) */
+  color: rgba(0, 0, 0, 0.85);   /* RGBA Color (Alternative Transparency) */
+  -webkit-filter: blur(2px);    /* Blur */
+  -moz-filter: blur(2px);
+  filter: blur(2px);
 }
 
-
+/*
 <filter id="shadow">
 <feDropShadow dx="4" dy="8" stdDeviation="4"/>
 </filter>
 
+					From Line 176  <svg class="icon icon--navarrow-prev">
+						<use xlink:href="#icon-navarrow"></use>
+					</svg>
 
 <polygon id="shadow" points="58.263,0.056 100,41.85 58.263,83.641 30.662,83.641 62.438,51.866 0,51.866 0,31.611 62.213,31.611 30.605,0 58.263,0.056" fill="#EEEEEE" filter="url(#dropshadow)">
 
